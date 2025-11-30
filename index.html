@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Top Black Header */
+        .top-header {
+            background: #111;
+            color: white;
+            font-size: 14px;
+            padding: 6px 0;
+        }
+
+        .top-header a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            margin-right: 25px;
+        }
+
+        /* Hero Text Box */
+        .hero-text-box {
+            background: rgba(255,255,255,0.15);
+            padding: 25px;
+            border-radius: 12px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        /* Info Cards */
+        .info-card {
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.07);
+            transition: 0.3s;
+        }
+        .info-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Course Cards */
+        .course-card {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        .course-card:hover {
+            transform: translateY(-6px);
+        }
+        .view-btn {
+            width: 100%;
+            background: #e60000;
+            color: white;
+            border-radius: 0 0 12px 12px;
+            padding: 12px;
+            border: none;
+            font-size: 16px;
+        }
+
+        /* Floating WhatsApp Icon */
+        .whatsapp-icon {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            z-index: 999;
+        }
+        .whatsapp-icon img {
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ====================== TOP BLACK HEADER ====================== -->
+<div class="top-header text-center">
+    <a href="#">For Enquiry : +91 - 9985396677</a>
+    <a href="#">Join WhatsApp Community</a>
+    <a href="#">Free Tutorials</a>
+    <a href="#">Hire From Us</a>
+</div>
+
+<!-- ====================== NAVBAR ====================== -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm py-3 sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold fs-3 text-primary" href="#">CyberSecurity</a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item"><a class="nav-link fw-semibold fs-6" href="#">Home</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fw-semibold fs-6" href="#" data-bs-toggle="dropdown">
+                        Courses
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Cyber Security Analyst</a></li>
+                        <li><a class="dropdown-item" href="#">Ethical Hacking</a></li>
+                        <li><a class="dropdown-item" href="#">Cloud Security & SOC</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link fw-semibold fs-6" href="#">Blog</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold fs-6" href="#">Contact Us</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ====================== CAROUSEL ====================== -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+        <!-- Cyber Slides -->
+        <div class="carousel-item active">
+            <img src="https://img.freepik.com/free-photo/cyber-security-concept-digital-padlock-hologram_23-2148539773.jpg" class="d-block w-100" style="height:480px; object-fit:cover;">
+            <div class="carousel-caption">
+                <div class="hero-text-box">
+                    <h2 class="fw-bold">Advance Your Career in Cyber Security</h2>
+                    <p>Master Real-Time Cyber Defense</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="https://img.freepik.com/free-photo/futuristic-cyber-security-background-with-lock-icon-digital-hologram_181624-26673.jpg" class="d-block w-100" style="height:480px; object-fit:cover;">
+            <div class="carousel-caption">
+                <div class="hero-text-box">
+                    <h2 class="fw-bold">Ethical Hacking & Pentesting</h2>
+                    <p>Become Red Team Ready</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="https://img.freepik.com/free-photo/hacker-working-computer-dark-room_53876-108131.jpg" class="d-block w-100" style="height:480px; object-fit:cover;">
+            <div class="carousel-caption">
+                <div class="hero-text-box">
+                    <h2 class="fw-bold">Stop Real Cyber Attacks</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="https://img.freepik.com/free-photo/man-holds-cyber-security-icon-hologram-his-hand_123827-23452.jpg" class="d-block w-100" style="height:480px; object-fit:cover;">
+            <div class="carousel-caption">
+                <div class="hero-text-box">
+                    <h2 class="fw-bold">Become a Certified Cybersecurity Engineer</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<!-- ====================== INFO CARDS ====================== -->
+<div class="container py-5">
+    <div class="row text-center">
+
+        <div class="col-md-3 mb-3">
+            <div class="info-card">
+                <h5 class="fw-bold">A Complete 360°</h5>
+                <p>Learning Experience</p>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <div class="info-card">
+                <h5 class="fw-bold">52,000+</h5>
+                <p>Students Trained</p>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <div class="info-card">
+                <h5 class="fw-bold">20+ Courses</h5>
+                <p>Cyber Programs</p>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <div class="info-card">
+                <h5 class="fw-bold">30+ Experts</h5>
+                <p>Cyber Security Mentors</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ====================== CYBER COURSES SECTION ====================== -->
+<div class="container pb-5">
+    <h2 class="text-center fw-bold mb-4">
+        Master In-Demand Cyber Security Skills
+    </h2>
+
+    <div class="row">
+
+        <!-- Course 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="course-card">
+                <img src="https://img.freepik.com/free-photo/hacker-using-laptop-hacking-into-security-system-night-time_23-2149276028.jpg" class="w-100" style="height:200px; object-fit:cover;">
+                <div class="p-3">
+                    <h5 class="fw-bold">Ethical Hacking</h5>
+                    <p>Course Duration: 4 Months</p>
+                </div>
+                <button class="view-btn">View More</button>
+            </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="course-card">
+                <img src="https://img.freepik.com/free-photo/hacker-using-laptop-hacking-into-security-system-night-time_23-2149276028.jpg" class="w-100" style="height:200px; object-fit:cover;">
+                <div class="p-3">
+                    <h5 class="fw-bold">Cyber Security Analyst</h5>
+                    <p>Course Duration: 5 Months</p>
+                </div>
+                <button class="view-btn">View More</button>
+            </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="course-card">
+                <img src="https://img.freepik.com/free-photo/hacker-using-laptop-hacking-into-security-system-night-time_23-2149276028.jpg" class="w-100" style="height:200px; object-fit:cover;">
+                <div class="p-3">
+                    <h5 class="fw-bold">Cloud Security & SOC</h5>
+                    <p>Course Duration: 3 Months</p>
+                </div>
+                <button class="view-btn">View More</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ====================== WHATSAPP ICON ====================== -->
+<div class="whatsapp-icon">
+    <a href="https://wa.me/9985396677">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+    </a>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
